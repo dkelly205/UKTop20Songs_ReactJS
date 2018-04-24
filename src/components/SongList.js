@@ -8,14 +8,15 @@ class SongList extends React.Component{
 
       return (
         <Song title={songs.im.name.label} key={song.id}>
+          {songs}
         </Song>
 
       );
 
     })
     return(
-
-    )
+ <div className="songList">{songNodes}</div>
+);
 
   }
 }
