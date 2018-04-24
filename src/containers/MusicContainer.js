@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-// import SongList from '../components/SongList';
+import SongList from '../components/SongList';
 
 class MusicContainer extends React.Component{
   constructor(props){
