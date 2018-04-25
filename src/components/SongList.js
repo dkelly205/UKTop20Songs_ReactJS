@@ -18,7 +18,7 @@ const SongList = (props) => {
             image={song["im:image"][2].label}
             price={song["im:price"].label}
             audio={song.link[1].attributes.href}
-            handlePlayPause={props.handlePlayPause}
+            // handlePlayPause={props.handlePlayPause}
           />
         )
       })}

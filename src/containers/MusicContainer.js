@@ -5,6 +5,8 @@ import SongList from '../components/SongList';
 class MusicContainer extends React.Component{
   constructor(props){
     super(props);
+    this.handleSelectChange = this.handleSelectChange.bind(this);
+    // this.handlePlayPause = this.handlePlayPause.bind(this);
     this.state = {
       songs:[]
     };
@@ -16,12 +18,24 @@ class MusicContainer extends React.Component{
     .then(json => this.setState({songs: json.feed.entry}));
   }
 
+  handleSelectChange(event) {
+    fetch(event.target.value)
+    .then(response => response.json())
+    .then(json => this.setState({songs: json.feed.entry}));
+  }
+
+  // handlePlayPause(audio) {
+  //   audio.paused ? audio.play() : audio.pause();
+  //   audio.classList.toggle('playing');
+  // }
+
   render(){
     return (
-      <React.Fragment>
-        <Header title="UK Chart"/>
+      <article>
+        <Header title="UK Chart" handleSelectChange={this.handleSelectChange}
+        genres={this.props.genres}/>
         <SongList songs={this.state.songs}/>
-      </React.Fragment>
+      </article>
     )
   }
 }

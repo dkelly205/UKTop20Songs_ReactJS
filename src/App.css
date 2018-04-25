@@ -1,18 +1,29 @@
 .header {
   color:#05386B;
-  font-size: 5em;
+  font-size: 6em;
   text-align: center;
-  display:block;
-  border-bottom: 1px solid #05386B;
-  width: 25%;
+  width: 40%;
   margin:auto;
-  font-family: bree-serif;
+  font-family: 'Permanent Marker', cursive;
 }
 
-.song{display:block;
+.dropDown{
+  width:40%;
+  height:40px;
+  background-color: #05386B;
+  color: #EDF5E1;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 0.2em;
+  text-align: center;
+}
+
+.song{
       border-bottom: 1px solid #05386B;
       width:60%;
-      margin:auto;}
+      margin:auto;
+      padding:20px;
+
+    }
 
 
 body{
@@ -20,4 +31,8 @@ body{
   color:#05386B;
 }
 
-.details{display:inline-block;}
+audio{
+  width:30%;
+  padding-right:10px;
+  color:black;
+}
