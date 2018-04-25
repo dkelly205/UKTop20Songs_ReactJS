@@ -1,11 +1,23 @@
 .header {
-  color:black;
-  font-size: 4em;
+  color:#05386B;
+  font-size: 5em;
   text-align: center;
-  position:relative;
-  top: 100px;
-  border-bottom: 1px solid black;
-  width: 50%;
+  display:block;
+  border-bottom: 1px solid #05386B;
+  width: 25%;
   margin:auto;
   font-family: bree-serif;
 }
+
+.song{display:block;
+      border-bottom: 1px solid #05386B;
+      width:60%;
+      margin:auto;}
+
+
+body{
+  background-color: #5CDB95;
+  color:#05386B;
+}
+
+.details{display:inline-block;}
